@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="icon" type="image/x-icon" href="img/icon.ico" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Cristian A. Tobar</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div>
+          <img src="img/profile_photo.jpg" height="100%" alt="" />
+        </div>
+        <h1>Cristian Tobar</h1>
+        <h2>Desarrollador full stack</h2>
+        <div class="redes">
+          <a
+            href="https://www.linkedin.com/in/cristianandrestobar/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/CristianTobar07" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.facebook.com/cristianndress/" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Cristian.</span> Con más de 4 años de experiencia
+          sólida en el ámbito del desarrollo de software, he adquirido
+          habilidades destacadas en el procesamiento y análisis de datos, la
+          creación de páginas web, el desarrollo de aplicaciones móviles y la
+          gestión de bases de datos, además de colaborar de manera efectiva en
+          entornos de trabajo en equipo, entre otras competencias. Lo que
+          resalta a lo largo de mi carrera es mi compromiso innegable con la
+          disciplina, la dedicación y la responsabilidad. Me distingo por mi
+          tenacidad y determinación al perseguir metas, siempre con el enfoque
+          de lograr objetivos con éxito.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                02-12-1995
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                +573185637944
+              </li>
+              <li>
+                <strong>Email</strong>
+                ctobar328@gmail.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Popayán - Cauca - Colombia
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>Desarrollador de software</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-futbol"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-language"></i>
+                <span>INGLES</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          <a
+            href="https://clustercreatic-my.sharepoint.com/:b:/g/personal/cristian_mosquera_cdtcreatic_com/EVFUCs1-dh5Cmah1yin-x-ABSJM_3wqCS2VRa-RDP473vA?e=Qv89sk"
+            target="_blank"
+            download="true"
+          >
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </a>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+          <!-- Tecnical skills -->
+          <div class="col">
+            <h1>
+              <strong> Habilidades técnicas </strong>
+            </h1>
+            <br />
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Typescript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>React</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>React Native</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>78%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Angular</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>NodeJs</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>SQL & NoQSL</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h1>Habilidades profesionales</h1>
+            <br />
+            <div class="skill">
+              <span>Comunicación asertiva</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>99%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Proyect Management</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+
+            <div class="item izq">
+              <h4>Diplomado en arquitectura de software</h4>
+              <span class="casa">Universidad de San Buenaventura Cali</span>
+              <span class="fecha">2023 - 2024</span>
+              <p>
+                Diplomado en Arquitectura de Software, con énfasis en la Nube.
+                Especializado en el manejo de tecnologías de Frontend utilizando
+                React, así como en el desarrollo de Backend con Node.js, Express
+                y MongoDB. Experiencia en Integración Continua y Despliegue
+                Continuo (CI/CD). Conocimientos sólidos en Inteligencia
+                Artificial y diversas temáticas prácticas relacionadas.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Desarrollador frontend</h4>
+              <span class="casa">Udemy</span>
+              <span class="fecha">2019 - 2020</span>
+              <p>
+                Experiencia en Desarrollo Frontend, comenzando desde las bases
+                de HTML, CSS y JavaScript, con un incremento notable en la curva
+                de aprendizaje al introducir bibliotecas y frameworks de
+                desarrollo como React y Angular. Además, familiarizado con
+                frameworks de diseño como Bootstrap, Material UI, Kendo, entre
+                otros
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Ingeniero Físico</h4>
+              <span class="casa">Universidad del Cauca</span>
+              <span class="fecha">2013 - 2018</span>
+              <p>
+                Conocimientos en las bases teóricas de la física y sus
+                aplicaciones en el mundo moderno. He desempeñado roles como
+                desarrollador de software, destacando en áreas como inteligencia
+                artificial, visión por computadora, matemáticas y estadísticas,
+                así como en hardware, entre otras disciplinas.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Desarrollador web</h4>
+              <span class="casa">CDT Creatic</span>
+              <span class="fecha">2022 - Actualidad</span>
+              <p>
+                Lider de desarrollo Frontend en tres plataformas web, aplicando
+                tecnologías como React.js con Redux y TypeScript, así como
+                Angular con TypeScript, NgRx, Node.js y Express. Además,
+                asumiendo el rol de líder técnico de proyecto en CTeI,
+                implementando la metodología Scrum mediante las herramientas
+                Jira y BitBucket.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Front Developer</h4>
+              <span class="casa">ITOeste</span>
+              <span class="fecha">10 meses</span>
+              <p>
+                Desarrollo de aplicaciones web y móviles con React.js y React
+                Native. Uso de JavaScript, TypeScript, Redux y Redux Toolkit
+                para menejo global del estado, Kendo, Formik, peticiones HTTP,
+                entre otras.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Desarrollador de software e investigador</h4>
+              <span class="casa">Dirección general marítima</span>
+              <span class="fecha">28 meses</span>
+              <p>
+                Análisis estacional e interanual de las diferentes variables
+                océano atmoféricas en la Cuenca Pacífica Colombiana (CPC), así
+                como en las diferentes subregiones, como aporte en la
+                interpretación y eféctos del Fenómeno de El Niño en Colombia.
+                Adicionalmente, generación de software para visualización de
+                datos meteomatínos con aplicaciones de escritorio y entornos
+                web.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>ALGUNOS PROYECTOS</h2>
+        <div class="galeria">
+          <!-- PatCode -->
+
+          <div class="proyecto">
+            <a href="https://creatic-ip.com/" target="_blank">
+              <div class="container-proyect">
+                <img src="img/p1.jpg" height="100%" width="100%" alt="" />
+                <div class="overlay">
+                  <h3>PatCode</h3>
+                  <p>Regístro de propiedad intelectual</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Sorveo -->
+          <div class="proyecto">
+            <a href="https://creatictrade.com/home" target="_blank">
+              <div class="container-proyect">
+                <img src="img/p2.png" height="100%" width="100%" alt="" />
+                <div class="overlay">
+                  <h3>Sorvo</h3>
+                  <p>Comercio justo</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Rykwa -->
+          <div class="proyecto">
+            <a href="https://creaticrykwa.com/" target="_blank">
+              <div class="container-proyect">
+                <img src="img/p3.png" height="100%" width="100%" alt="" />
+                <div class="overlay">
+                  <h3>Rykwa</h3>
+                  <p>Gestión de conomiento</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Página web de jugos -->
+
+          <div class="proyecto">
+            <a
+              href="https://shiny-pika-6c489f.netlify.app/#appBar"
+              target="_blank"
+            >
+              <div class="container-proyect">
+                <img src="img/p4.png" height="100%" width="100%" alt="" />
+                <div class="overlay">
+                  <h3>Venta de jugos</h3>
+                  <p>Página web</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Portafolio GitHub -->
+          <div class="proyecto">
+            <a
+              href="https://pedantic-austin-a3a8ad.netlify.app/"
+              target="_blank"
+            >
+              <div class="container-proyect">
+                <img src="img/p5.png" height="100%" width="100%" alt="" />
+                <div class="overlay">
+                  <h3>Repositiorio</h3>
+                  <p>Enlace a proyectos GitHub</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Canciones -->
+          <div class="proyecto">
+            <a
+              href="https://eloquent-goldwasser-69998a.netlify.app/"
+              target="_blank"
+            >
+              <div class="container-proyect">
+                <img src="img/p6.png" height="100%" width="100%" alt="" />
+                <div class="overlay">
+                  <h3>OYE</h3>
+                  <p>Canciones grátis para la comunidad</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <input type="text" placeholder="Tú Nombre" />
+            <input type="text" placeholder="Número telefónico" />
+            <input type="text" placeholder="Dirección de correo" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Colombia
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  +57 3136452017
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  ctobar328@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a
+          href="https://www.linkedin.com/in/cristianandrestobar/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/CristianTobar07" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.facebook.com/cristianndress/" target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
