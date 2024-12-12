@@ -28,13 +28,14 @@ function efectoHabilidades() {
     habilidades[2].classList.add("react");
     habilidades[3].classList.add("reactnativo");
     habilidades[4].classList.add("angular");
-    habilidades[5].classList.add("nodejs");
-    habilidades[6].classList.add("nosql");
-    habilidades[7].classList.add("comunicacion");
-    habilidades[8].classList.add("trabajo");
-    habilidades[9].classList.add("creatividad");
-    habilidades[10].classList.add("dedicacion");
-    habilidades[11].classList.add("proyect");
+    habilidades[5].classList.add("vue");
+    habilidades[6].classList.add("nodejs");
+    habilidades[7].classList.add("nosql");
+    habilidades[8].classList.add("comunicacion");
+    habilidades[9].classList.add("trabajo");
+    habilidades[10].classList.add("creatividad");
+    habilidades[11].classList.add("dedicacion");
+    habilidades[12].classList.add("proyect");
   }
 }
 

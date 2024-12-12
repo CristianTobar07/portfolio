@@ -292,7 +292,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -305,7 +305,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -331,7 +331,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 78%;
+    width: 85%;
   }
 }
 
@@ -340,6 +340,19 @@ html {
   animation: 2s angular forwards;
 }
 @keyframes angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.skills .skill .vue {
+  width: 0%;
+  animation: 2s vue forwards;
+}
+@keyframes vue {
   0% {
     width: 0%;
   }
@@ -357,7 +370,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 60%;
+    width: 85%;
   }
 }
 
@@ -370,7 +383,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 80%;
   }
 }
 
