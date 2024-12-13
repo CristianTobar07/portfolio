@@ -1,4 +1,8 @@
 let menuVisible = false;
+
+const linkCurriculum = `${window.location.origin}/media/curriculum.pdf`;
+const link = document.querySelector("#download_curriculum a");
+link.href = linkCurriculum;
 //Función que oculta o muestra el menu
 function mostrarOcultarMenu() {
   if (menuVisible) {
