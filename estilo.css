@@ -64,7 +64,7 @@ html {
       rgba(30, 35, 38, 0.8),
       rgba(30, 35, 38, 1)
     ),
-    url(img/background.jpg);
+    url(img/background.webp);
   background-size: cover;
   height: 100vh;
   color: #fff;
@@ -84,13 +84,11 @@ html {
   margin-top: 80px;
   border: 10px solid #808000;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   margin: auto;
   border-radius: 100%;
-  & img {
-    object-fit: cover;
-  }
+  
 }
 .inicio .contenido-banner h1 {
   margin-top: 40px;
@@ -282,175 +280,7 @@ html {
   right: -15px;
   font-size: 14px;
 }
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript {
-  width: 0%;
-  animation: 2s javascript forwards;
-}
-@keyframes javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 95%;
-  }
-}
 
-.skills .skill .typescript {
-  width: 0%;
-  animation: 2s typescript forwards;
-}
-@keyframes typescript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 95%;
-  }
-}
-
-.skills .skill .react {
-  width: 0%;
-  animation: 2s react forwards;
-}
-@keyframes react {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 95%;
-  }
-}
-
-.skills .skill .reactnativo {
-  width: 0%;
-  animation: 2s reactnativo forwards;
-}
-@keyframes reactnativo {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
-.skills .skill .angular {
-  width: 0%;
-  animation: 2s angular forwards;
-}
-@keyframes angular {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-.skills .skill .vue {
-  width: 0%;
-  animation: 2s vue forwards;
-}
-@keyframes vue {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
-.skills .skill .nodejs {
-  width: 0%;
-  animation: 2s nodejs forwards;
-}
-@keyframes nodejs {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
-.skills .skill .nosql {
-  width: 0%;
-  animation: 2s nosql forwards;
-}
-@keyframes nosql {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
-.skills .skill .comunicacion {
-  width: 0%;
-  animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
-.skills .skill .trabajo {
-  width: 0%;
-  animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-.skills .skill .creatividad {
-  width: 0%;
-  animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
-.skills .skill .dedicacion {
-  width: 0%;
-  animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 99%;
-  }
-}
-
-.skills .skill .proyect {
-  width: 0%;
-  animation: 2s proyect forwards;
-}
-@keyframes proyect {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
 /* SECCION CURRICULUM */
 .curriculum {
   background-color: #1e2326;
